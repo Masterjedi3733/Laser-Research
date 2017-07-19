@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo "plot '$1'with linespoints title '$1'" > gp.tmp
+echo "set xlabel 'area (cm^2)'" >> gp.tmp
+echo "set ylabel 'irradiance (W/cm^2)'" >> gp.tmp
+echo "set title '$1'" >> gp.tmp
+echo "set grid" >> gp.tmp
+echo "set logscale xy" >> gp.tmp
+echo "set term png" >> gp.tmp
+echo "set output '$1.png'" >> gp.tmp
+echo "replot" >> gp.tmp
+echo "set term x11" >> gp.tmp
+

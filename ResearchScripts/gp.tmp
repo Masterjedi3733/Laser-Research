@@ -1,0 +1,10 @@
+plot 'RetinalThresholds-../DataFiles/PulseSpotEnergyWavelength.txt' using 1:2 with linespoints title 'RetinalThresholds-../DataFiles/PulseSpotEnergyWavelength.txt'
+set xlabel 'area (cm^2)'
+set ylabel 'irradiance (W/cm^2)'
+set title 'RetinalThresholds-../DataFiles/PulseSpotEnergyWavelength.txt'
+set grid
+set logscale xy
+set term png
+set output 'RetinalThresholds-../DataFiles/PulseSpotEnergyWavelength.txt.png'
+replot
+set term x11

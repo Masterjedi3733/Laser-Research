@@ -1,0 +1,6 @@
+#! /bin/bash
+
+filename="RetinalThresholds-$1"
+echo $1 | /home/masterjedi3733/Desktop/Research/ResearchScripts/converting\ stacks.py > $filename
+/home/masterjedi3733/Desktop/Research/ResearchScripts/gp.txt $filename
+/home/masterjedi3733/Desktop/Research/ResearchScripts/plot.gnu

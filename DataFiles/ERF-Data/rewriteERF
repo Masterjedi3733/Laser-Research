@@ -1,0 +1,6 @@
+#! /bin/bash
+
+for i do
+	 ../../ResearchScripts/ERF/ERF42.txt $i
+done
+

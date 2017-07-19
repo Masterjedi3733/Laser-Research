@@ -1,0 +1,10 @@
+plot 'dose50.txt' using 4:2 with linespoints title 'dose50'
+set xlabel 'Dose'
+set ylabel 'probability'
+set title 'dose50.txt'
+set grid
+set logscale xy
+set term png
+set output 'dose50.png'
+replot
+set term x11

@@ -1,0 +1,13 @@
+#! /bin/bash
+
+name=$(basename "$1" .txt)
+echo "plot '$1' using 4:2 with linespoints title '$name'" > gp.tmp
+echo "set xlabel 'Dose'" >> gp.tmp
+echo "set ylabel 'probability'" >> gp.tmp
+echo "set title '$1'" >> gp.tmp
+echo "set grid" >> gp.tmp
+echo "set logscale xy" >> gp.tmp
+echo "set term png" >> gp.tmp
+echo "set output '$name.png'" >> gp.tmp
+echo "replot" >> gp.tmp
+echo "set term x11" >> gp.tmp

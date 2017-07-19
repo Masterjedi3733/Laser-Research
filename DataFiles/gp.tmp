@@ -1,0 +1,10 @@
+plot 'ERF-1pulse' using 4:2 with linespoints title 'ERF-1pulse'
+set xlabel 'Dose'
+set ylabel 'probability'
+set title 'ERF-1pulse'
+set grid
+set logscale xy
+set term png
+set output 'ERF-1pulse.png'
+replot
+set term x11

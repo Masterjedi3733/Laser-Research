@@ -1,0 +1,6 @@
+#! /bin/bash
+
+filename="ERF-$1"
+echo $1 | /home/masterjedi3733/Desktop/Research/ResearchScripts/ERF/ERF.py > $filename
+/home/masterjedi3733/Desktop/Research/ResearchScripts/ERF/ERFgp.txt $filename
+/home/masterjedi3733/Desktop/Research/ResearchScripts/ERF/ERFplot.gnu
